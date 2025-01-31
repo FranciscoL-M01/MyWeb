@@ -16,10 +16,10 @@ const CardProject = () => {
             </CardBody>
         </Card.Body>
         <Card.Footer style={{justifyContent: 'space-evenly'}}>
-            <Button asChild colorPalette={'teal'} variant={'outline'} width={72}>
+            <Button asChild colorPalette={'teal'} variant={'outline'} width="72px">
                 <a>Try It!</a>
             </Button>
-            <Button asChild colorPalette={'teal'} variant={'outline'} width={72}>
+            <Button asChild colorPalette={'teal'} variant={'outline'} width="72px">
                 <a><FaGithub/></a>
             </Button>
         </Card.Footer>
