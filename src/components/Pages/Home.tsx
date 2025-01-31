@@ -1,9 +1,9 @@
 import React from 'react'
-// import HomeBackground from '../HomeBackground'
+import HomeBackground from '../HomeBackground'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <HomeBackground />
   )
 }
 
