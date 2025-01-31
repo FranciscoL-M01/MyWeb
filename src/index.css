@@ -6,3 +6,7 @@
     clip-path: polygon(0 0, 100% 0, 100% 66%, 0 88%);
 
 }
+
+.skewProjects {
+    clip-path: polygon(0 0, 100% 40%, 100% 100%, 0% 100%);
+}

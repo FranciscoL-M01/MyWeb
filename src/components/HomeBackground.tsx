@@ -6,7 +6,7 @@ import { Box, Center, Container, HStack, Image, Text } from '@chakra-ui/react'
 
 const HomeBackground = () => {
   return (
-    <HStack bgColor="black" className='skewImage' style={{justifyContent: 'center'}} gap={0} marginBottom="5rem">
+    <HStack bgColor="black" className='skewImage' style={{justifyContent: 'center'}} gap={0} marginBottom="2rem">
         <Box pos='relative' bgColor='white'>
             <Image src={design} opacity="60%" /> 
             <Text 
