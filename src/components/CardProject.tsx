@@ -6,14 +6,8 @@ interface Props {
     project: Projects
 }
 
-const iconsWeb = {
-    github: FaGithub,
-    figma: FaFigma
-}
-
-
 const CardProject = ({project}: Props) => {
-    let exists = project.website === null ? 'none' : 'exists';
+    let exists = project.website === "" ? 'none' : 'exists';
     let icon_project = project.icon === 'github' ? <FaGithub /> : project.icon === 'figma' ? <FaFigma /> : null ;
 
   return (
@@ -30,7 +24,7 @@ const CardProject = ({project}: Props) => {
         </Card.Body>
         <Card.Footer style={{justifyContent: 'space-evenly'}}>
             <Show
-            when={exists === 'none'}
+            when={exists === 'exists'}
             >
                 <Button asChild colorPalette={'gray'} width="72px">
                     <a href={project.website} target='_blank'>Try It!</a>
