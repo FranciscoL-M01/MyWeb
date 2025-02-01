@@ -1,5 +1,4 @@
-import { Box, Button, HStack, Link, Stack, Text } from '@chakra-ui/react'
-import React from 'react'
+import { Box, HStack, Link, Text, VStack } from '@chakra-ui/react'
 import { MdOutlineEmail } from "react-icons/md";
 import { CiLinkedin } from "react-icons/ci";
 
@@ -8,13 +7,21 @@ import { CiLinkedin } from "react-icons/ci";
 const PageFooter = () => {
   return (
     <>
-    <Stack bgColor="black" borderTopColor='white' borderTopWidth={2} style={{justifyContent: 'space-evenly'}} width='100%' display={{base: "direction: column", sm: "direction: row"}} columns={{sm:1, md: 2}}>
-        <Text fontFamily="Lora" fontSize="2xl" fontWeight="semibold" textAlign="center" marginTop="10">Francisco Lopez</Text>
-        <Box justifyContent="center" alignSelf="center" display="flex" marginTop="20">
-            <Link borderWidth={2} borderRadius={"100%"} borderColor={"white"} padding={2} margin="20px" href='mailto:franciscolopezmorelos@gmail.com'><MdOutlineEmail size={"40px"} /></Link>
-            <Link borderWidth={2} borderRadius={"100%"} borderColor={"white"} padding={2} margin="20px" href="https://linkedin.com/in/francisco-lopez-morelos-268ab6292"><CiLinkedin size={"40px"} /></Link>
+      <HStack bgColor="black" borderTopColor='white' borderTopWidth={2} style={{justifyContent: 'space-evenly'}} width='100%' padding="1rem" display={{base: 'none', md: 'flex'}}>
+        <Text fontFamily="Lora" fontSize="2xl" fontWeight="semibold" textAlign="center">Francisco Lopez</Text>
+        <Box justifyContent="center" alignItems="center" display="flex" gap="2rem">
+            <Link borderWidth={2} borderRadius={"100%"} borderColor={"white"} padding={2} href='mailto:franciscolopezmorelos@gmail.com'><MdOutlineEmail size={"40px"} /></Link>
+            <Link borderWidth={2} borderRadius={"100%"} borderColor={"white"} padding={2} href="https://linkedin.com/in/francisco-lopez-morelos-268ab6292"><CiLinkedin size={"40px"} /></Link>
         </Box>
-    </Stack>
+      </HStack>
+      <VStack bgColor="black" borderTopColor='white' borderTopWidth={2} style={{justifyContent: 'space-evenly'}} width='100%' padding="1rem" display={{base: 'flex', md: 'none'}}>
+        <Text fontFamily="Lora" fontSize="2xl" fontWeight="semibold" textAlign="center">Francisco Lopez</Text>
+        <HStack gap="2rem">
+          <Link borderWidth={2} borderRadius={"100%"} borderColor={"white"} padding={2} href='mailto:franciscolopezmorelos@gmail.com'><MdOutlineEmail size={"40px"} /></Link>
+          <Link borderWidth={2} borderRadius={"100%"} borderColor={"white"} padding={2} href="https://linkedin.com/in/francisco-lopez-morelos-268ab6292"><CiLinkedin size={"40px"} /></Link>
+        </HStack>
+      </VStack>
+    
     </>
   )
 }
