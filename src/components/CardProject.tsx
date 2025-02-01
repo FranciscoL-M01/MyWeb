@@ -1,26 +1,43 @@
-import { Button, Card, CardBody, Heading, Image, List } from '@chakra-ui/react'
-import holiday from '../images/HolidayAPI_img.png'
+import { Button, Card, CardBody, Heading, Image, List, Show } from '@chakra-ui/react'
 import { FaGithub, FaFigma } from "react-icons/fa";
+import {Projects} from '@/hooks/useData'
+
+interface Props {
+    project: Projects
+}
+
+const iconsWeb = {
+    github: FaGithub,
+    figma: FaFigma
+}
 
 
-const CardProject = () => {
+const CardProject = ({project}: Props) => {
+    let exists = project.website === null ? 'none' : 'exists';
+    let icon_project = project.icon === 'github' ? <FaGithub /> : project.icon === 'figma' ? <FaFigma /> : null ;
+
   return (
-    <Card.Root width="100%" overflow="hidden">
+
+    <Card.Root width="100%" overflow="hidden" bgColor={project.color}>
         <Card.Body>
-            <Image src={holiday} />
+            <Image src={project.image} />
             <CardBody fontFamily="Lora">
-                <Heading>Holiday API</Heading>
+                <Heading>{project.title}</Heading>
                 <List.Root>
-                    <List.Item>Html</List.Item>
+                    <List.Item>{project.tools}</List.Item>
                 </List.Root>
             </CardBody>
         </Card.Body>
         <Card.Footer style={{justifyContent: 'space-evenly'}}>
-            <Button asChild colorPalette={'teal'} variant={'outline'} width="72px">
-                <a>Try It!</a>
-            </Button>
-            <Button asChild colorPalette={'teal'} variant={'outline'} width="72px">
-                <a><FaGithub/></a>
+            <Show
+            when={exists === 'none'}
+            >
+                <Button asChild colorPalette={'gray'} width="72px">
+                    <a href={project.website} target='_blank'>Try It!</a>
+                </Button>
+            </Show>
+            <Button asChild colorPalette={'gray'} width="72px">
+                <a href={project.project_site} target='_blank'>{icon_project}</a>
             </Button>
         </Card.Footer>
     </Card.Root>
