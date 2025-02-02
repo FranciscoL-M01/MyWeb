@@ -7,7 +7,7 @@ import { Box, Center, Container, HStack, Image, Text, VStack } from '@chakra-ui/
 const HomeBackground = () => {
   return (
     <>
-        <HStack className='skewImage home_gradient' style={{justifyContent: 'center'}} gap={0} marginBottom="2rem" display={{base: "none", md:"flex"}}>
+        <HStack className='skewImage global_gradient' style={{justifyContent: 'center'}} gap={0} marginBottom="2rem" display={{base: "none", md:"flex"}}>
             <Box pos='relative' bgColor='white'>
                 <Image src={design} opacity="60%" />
                 <Text
@@ -36,7 +36,7 @@ const HomeBackground = () => {
                 </Box>
             </Box>
         </HStack>
-        <VStack padding="1rem" className='skewImage home_gradient' gap={0} marginBottom="2rem" display={{base: "grid", md:"none"}}>
+        <VStack padding="1rem" className='skewImage global_gradient' gap={0} marginBottom="2rem" display={{base: "grid", md:"none"}}>
             <Box pos='relative' justifySelf="end">
                 <Image src={design} opacity="60%" width="145px" height="145px" borderRadius="100%" />
                 <Text
