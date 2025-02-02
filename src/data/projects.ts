@@ -13,7 +13,7 @@ export default [
         "tools": "HTML, CSS, JS, C#",
         "website": "",
         "icon": "github",
-        "project_site": "https://github.com"
+        "project_site": "https://github.com/FranciscoL-M01/PublicHolidaysAPI"
     },
     {
         "color": "yellow.600",
