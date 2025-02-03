@@ -3,11 +3,10 @@ import AboutmeContent from '../AboutmeContent'
 import ContentSwitch from '../ContentSwitch'
 
 const AboutMe = () => {
-  const [activeSwitch, setActiveSwitch] = useState("resume");
 
   return (
     <>
-      <ContentSwitch setActiveSwitch={setActiveSwitch} />
+      {/* <ContentSwitch setActiveSwitch={setActiveSwitch} /> */}
       <AboutmeContent />
     </>
   )

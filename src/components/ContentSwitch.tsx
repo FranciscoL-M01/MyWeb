@@ -3,6 +3,8 @@ import { Switch } from '../components/ui/switch'
 import { VStack, Text } from '@chakra-ui/react'
 import { useState } from 'react';
 
+// I had an idea that I wanted to work with here but I will look more into that in the future.
+
 interface ContentSwitchProps {
     setActiveSwitch: (value: string) => void;
 }

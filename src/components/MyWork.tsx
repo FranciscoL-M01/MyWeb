@@ -13,7 +13,7 @@ const MyWork = () => {
         </Box>
         <SimpleGrid columns={{sm: 1, md: 2, lg: 3, xl: 4 }} padding={10} gap='15px' bgColor={'black'}>
           {data.map(projects => 
-            <CardProject project={projects}/>
+            <CardProject key={projects.title} project={projects}/>
           )}
         </SimpleGrid>
     </>
