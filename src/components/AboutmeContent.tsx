@@ -115,7 +115,7 @@ const AboutmeContent = () => {
                         Projects
                     </Text>
                     <Text textStyle="l" padding="5px 0">
-                        <span>Personal Portfolio - Technologies Used: HTML, CSS, JS</span>
+                        <span>Personal Portfolio - Technologies Used: React, Chakra UI</span>
                         <span><br/>My personal website is used to store my projects and show my personal achievements.</span>
                     </Text>
                     <Text textStyle="l" padding="5px 0">
@@ -243,7 +243,7 @@ const AboutmeContent = () => {
                 Projects
             </Text>
             <Text textStyle="sm" padding="5px 0">
-                <span>Personal Portfolio - Technologies Used: HTML, CSS, JS</span>
+                <span>Personal Portfolio - Technologies Used: React, Chakra UI</span>
                 <span><br/>My personal website is used to store my projects and show my personal achievements.</span>
             </Text>
             <Text textStyle="sm" padding="5px 0">

@@ -1,8 +1,7 @@
 import logo from '../images/FL - Black.png'
-import { Box, HStack, Image } from '@chakra-ui/react'
+import { Box, Button, HStack, Image } from '@chakra-ui/react'
 import { NavLink } from 'react-router-dom'
 import { Text } from '@chakra-ui/react'
-import {Button} from '@chakra-ui/react/button'
 import { IoMenu } from "react-icons/io5";
 import { MenuContent, MenuItem, MenuRoot, MenuTrigger } from '@chakra-ui/react/menu'
 
