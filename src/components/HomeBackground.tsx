@@ -36,7 +36,7 @@ const HomeBackground = () => {
                 </Box>
             </Box>
         </HStack>
-        <VStack padding="1rem" className='skewImage global_gradient' gap={0} marginBottom="2rem" display={{base: "grid", md:"none"}}>
+        <VStack padding="1rem" className='skewImage global_gradient' gap={0} marginBottom="2rem" position="relative" display={{base: "grid", md:"none"}}>
             <Box pos='relative' justifySelf="end">
                 <Image src={design} opacity="60%" width="145px" height="145px" borderRadius="100%" />
                 <Text
@@ -55,11 +55,11 @@ const HomeBackground = () => {
                     Build
                 </Text>
             </Box>
-            <Box position='absolute' justifySelf="center">
+            <Box position='absolute' top="50%" left="50%" transform="translate(-50%, -50%)" zIndex="1" >
                 <Box bgColor="#d9d9d9" borderRadius="100%" width="171px" height="171px" margin='auto' filter="blur(10px)">
                 </Box>
             </Box>
-            <Box position='absolute' justifySelf="center">
+            <Box position='absolute' top="50%" left="50%" transform="translate(-50%, -50%)" zIndex="2" >
                 <Image src={profile} borderRadius="100%" width="167px" height="167px" />
             </Box>
         </VStack>

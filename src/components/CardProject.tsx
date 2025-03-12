@@ -12,7 +12,7 @@ const CardProject = ({project}: Props) => {
 
   return (
 
-    <Card.Root width="100%" overflow="hidden" bgColor={project.color}>
+    <Card.Root width="100%" overflow="hidden" bgColor={project.color} border={0}>
         <Card.Body>
             <Image src={project.image} />
             <CardBody fontFamily="Lora">
@@ -26,11 +26,11 @@ const CardProject = ({project}: Props) => {
             <Show
             when={exists === 'exists'}
             >
-                <Button asChild colorPalette={'gray'} width="72px">
-                    <a href={project.website} target='_blank'>Try It!</a>
+                <Button asChild colorPalette={'gray'} width="72px" bgColor={"white"}>
+                    <a href={project.website} target='_blank' color='black'>Try It!</a>
                 </Button>
             </Show>
-            <Button asChild colorPalette={'gray'} width="72px">
+            <Button asChild colorPalette={'gray'} width="72px" bgColor={"white"}>
                 <a href={project.project_site} target='_blank'>{icon_project}</a>
             </Button>
         </Card.Footer>
