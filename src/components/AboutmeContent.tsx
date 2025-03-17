@@ -76,10 +76,11 @@ const AboutmeContent = () => {
                     </Text>
                     <Text textStyle="l" display="flex" justifyContent="space-between">
                     <span>Bachelor of Science, Computer Science</span>
-                    <span>August 2020-May 2025</span>
+                    <span>Expected May 2025</span>
                     </Text>
                     <Text textStyle="l" borderBottomWidth={2} borderBottomColor="gray.800" paddingBottom="5px">
                         <li>California State University of Long Beach</li>
+                        <li>Relevant courses include (databases, Computer Science theory, Algorithms, etc.)</li>
                     </Text>
                     <Text textStyle="xl" fontWeight="bold" paddingTop="5px">
                         Certificates
@@ -119,8 +120,8 @@ const AboutmeContent = () => {
                         <span><br/>My personal website is used to store my projects and show my personal achievements.</span>
                     </Text>
                     <Text textStyle="l" padding="5px 0">
-                        <span>LocalLink - Technologies Used: HTML, CSS, JS, Node.JS, MongoDB, Express, and Bcrypt</span>
-                        <span><br/>Collaborative website which was done as a team project. This was my very first attempt at trying to build a website as a front-end developer. It was challenging but really interesting.</span>
+                        <span>EventMate - Technologies Used: Flutter, Web API</span>
+                        <span><br/>Collaborative mobile app in a year long project consisting of designing, planning, and executing our ideas. As the front-end developer for the team my tasks were to create the UI/UX and connect to the Web API that hosts our data.</span>
                     </Text>
                     <Text textStyle="l" padding="5px 0" borderBottomWidth={2} borderBottomColor="gray.800">
                         <span>Global Holidays Website - Technologies Used: HTML, CSS, JS, ASP.Net Core, Holiday API</span>
@@ -204,10 +205,11 @@ const AboutmeContent = () => {
             </Text>
             <Text textStyle="sm" display="flex" justifyContent="space-between">
             <span>Bachelor of Science, Computer Science</span>
-            <span>August 2020-May 2025</span>
+            <span>Expected May 2025</span>
             </Text>
             <Text textStyle="sm" borderBottomWidth={2} borderBottomColor="gray.800" paddingBottom="5px">
                 <li>California State University of Long Beach</li>
+                <li>Relevant courses include (databases, Computer Science theory, Algorithms, etc.)</li>
             </Text>
             <Text textStyle="md" fontWeight="bold" paddingTop="5px">
                 Certificates
@@ -247,8 +249,8 @@ const AboutmeContent = () => {
                 <span><br/>My personal website is used to store my projects and show my personal achievements.</span>
             </Text>
             <Text textStyle="sm" padding="5px 0">
-                <span>LocalLink - Technologies Used: HTML, CSS, JS, Node.JS, MongoDB, Express, and Bcrypt</span>
-                <span><br/>Collaborative website which was done as a team project. This was my very first attempt at trying to build a website as a front-end developer. It was challenging but really interesting.</span>
+                <span>EventMate - Technologies Used: Flutter, Web API</span>
+                <span><br/>ollaborative mobile app in a year long project consisting of designing, planning, and executing our ideas. As the front-end developer for the team my tasks were to create the UI/UX and connect to the Web API that hosts our data.</span>
             </Text>
             <Text textStyle="sm" padding="5px 0" borderBottomWidth={2} borderBottomColor="gray.800">
                 <span>Global Holidays Website - Technologies Used: HTML, CSS, JS, ASP.Net Core, Holiday API</span>
