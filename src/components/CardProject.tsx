@@ -27,11 +27,11 @@ const CardProject = ({project}: Props) => {
             when={exists === 'exists'}
             >
                 <Button asChild colorPalette={'gray'} width="72px" bgColor={"white"}>
-                    <a href={project.website} target='_blank' color='black'>Try It!</a>
+                    <a href={project.website} target='_blank' style={{color: "black"}}>Try It!</a>
                 </Button>
             </Show>
             <Button asChild colorPalette={'gray'} width="72px" bgColor={"white"}>
-                <a href={project.project_site} target='_blank'>{icon_project}</a>
+                <a href={project.project_site} target='_blank' style={{color: "black"}}>{icon_project}</a>
             </Button>
         </Card.Footer>
     </Card.Root>
