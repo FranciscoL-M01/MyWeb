@@ -1,6 +1,5 @@
 import { AspectRatio, Box, chakra, CodeBlock, createShikiAdapter, Heading, Link, List, Text } from '@chakra-ui/react'
 import type { HighlighterGeneric } from "shiki"
-import demoVideo from "../video/EventMate Demo Video.mp4";
 
 const authSystem = {
     code: `
@@ -161,7 +160,7 @@ const EventMateContent = () => {
             <Text textStyle="l" padding="5px 0">
             Through our demo video below, you can see EventMate in action:
             </Text>
-            <AspectRatio maxW="560px" ratio={1} margin="5px auto">
+            {/* <AspectRatio maxW="560px" ratio={1} margin="5px auto">
                 <chakra.video
                     src={demoVideo}
                     title="EventMate Demo Video"
@@ -171,7 +170,7 @@ const EventMateContent = () => {
                     h="100%"
                     style={{ objectFit: "contain"}}
                 />
-            </AspectRatio>
+            </AspectRatio> */}
                         
         <Link className='link-title link-page' marginTop="2rem" title="Back to the Top Link" aria-label='Back to the Top Link' href='#'>Back to the Top</Link>
         </>
