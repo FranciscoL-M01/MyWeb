@@ -9,7 +9,8 @@ export interface Projects {
     tools: string,
     website: string,
     icon: string,
-    project_site: string
+    project_site: string,
+    internal_site: string
 }
 
 const useData = () => ({data: projects});

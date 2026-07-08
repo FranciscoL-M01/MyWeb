@@ -4,6 +4,8 @@ import { NavLink } from 'react-router-dom'
 import { Text } from '@chakra-ui/react'
 import { IoMenu } from "react-icons/io5";
 import { MenuContent, MenuItem, MenuRoot, MenuTrigger } from '@chakra-ui/react/menu'
+import resume from '../documents/Francisco-Lopez-Resume.pdf';
+import { LuExternalLink } from 'react-icons/lu';
 
 
 const NavBar = () => {
@@ -14,6 +16,7 @@ const NavBar = () => {
         <HStack display={{base: 'none', md:'flex'}} marginRight={20} gap={10}>
             <NavLink to="/"><Text textStyle='3xl' fontWeight='bold' fontFamily="Lora" color={"white"}>Home</Text></NavLink>
             <NavLink to="/aboutme"><Text textStyle='3xl' fontWeight='bold' fontFamily="Lora" color={"white"}>About Me</Text></NavLink>
+            <a href={resume} target='_blank'><HStack gap={1} display="inline-flex" alignItems="center"><Text textStyle='3xl' fontWeight='bold' fontFamily="Lora" color={"white"}>Resume</Text><LuExternalLink /></HStack></a>
         </HStack>
         <Box display={{md:'none'}} marginRight={20}>
           <MenuRoot>
@@ -26,6 +29,9 @@ const NavBar = () => {
                 </MenuItem>
                 <MenuItem value='new-win' key="about" style={{justifyContent: "center"}}>
                   <NavLink to="/aboutme"><Text textStyle='xl' fontWeight='bold' fontFamily="Lora" color={"white"}>About Me</Text></NavLink>
+                </MenuItem>
+                <MenuItem value='new-win' key="resume" style={{justifyContent: "center"}}>
+                <a href={resume} target='_blank'><HStack gap={1} display="inline-flex" alignItems="center"><Text textStyle='xl' fontWeight='bold' fontFamily="Lora" color={"white"}>Resume</Text><LuExternalLink /></HStack></a>
                 </MenuItem>
               </MenuContent>
           </MenuRoot>
