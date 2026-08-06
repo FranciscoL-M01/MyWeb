@@ -1,4 +1,4 @@
-import { Box, Text, SimpleGrid, Heading } from '@chakra-ui/react'
+import { Box, Text, SimpleGrid, Heading, Link } from '@chakra-ui/react'
 import CardProject from './CardProject'
 import useData from "../hooks/useData"
 
@@ -16,6 +16,9 @@ const MyWork = () => {
             <CardProject key={projects.title} project={projects}/>
           )}
         </SimpleGrid>
+        {/* <Box bgColor={'black'} width="100%">
+        <Link className='link-title link-page' margin="2rem 0 2rem 2rem" title="Back to the Top Link" aria-label='Back to the Top Link' href='#'>Back to the Top</Link>
+        </Box> */}
     </>
   )
 }

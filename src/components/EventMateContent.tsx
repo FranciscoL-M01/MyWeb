@@ -157,9 +157,9 @@ const EventMateContent = () => {
             <Text textStyle="l" padding="5px 0">
             We successfully delivered on our requirements on creating a seamless, user-friendly, and visually appealing platform that enhances event discovery and engagement. I learned how to deep-dive into state management, optimize widget rendering, and translate complex UI/UX designs into reusable, clean code components. This project taught me the immense value of clear documentation and collaborative system design, as a result, I walked away with a better understanding of how client-side applications interface with cloud architecture.
             </Text>
-            <Text textStyle="l" padding="5px 0">
+            {/* <Text textStyle="l" padding="5px 0">
             Through our demo video below, you can see EventMate in action:
-            </Text>
+            </Text> */}
             {/* <AspectRatio maxW="560px" ratio={1} margin="5px auto">
                 <chakra.video
                     src={demoVideo}

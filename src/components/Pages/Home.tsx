@@ -1,8 +1,7 @@
-import React from 'react'
 import HomeBackground from '../HomeBackground'
 import HomeIntro from '../HomeIntro'
 import MyWork from '../MyWork'
-import { Box, Image } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 
 const Home = () => {
   return (
