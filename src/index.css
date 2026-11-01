@@ -3,6 +3,11 @@
       scroll-behavior: smooth;
     }
   }
+
+/* GLOBAL CSS */
+.flex-display {
+    display: flex;
+}
   
 /* PAGE SETTINGS */
 
