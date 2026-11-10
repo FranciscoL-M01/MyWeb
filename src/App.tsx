@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import PageFooter from './components/PageFooter'
 import EventMate from './components/Pages/EventMate'
 import ScrollToTop from './components/ScrollToTop'
+import CityLongBeachEx from './components/Pages/CityLongBeachEx'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/aboutme' element={<AboutMe />} />
           <Route path='/eventmate' element={<EventMate />} />
+          <Route path='/longbeachexperience' element={<CityLongBeachEx />} />
         </Routes>
       <PageFooter />
     </>

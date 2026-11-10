@@ -3,10 +3,12 @@
 import projects from "../data/projects"
 
 export interface Projects {
+    text_description: string;
     color: string,
     image: string,
     title: string,
     tools: string,
+    text: string,
     website: string,
     icon: string,
     project_site: string,

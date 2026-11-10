@@ -18,6 +18,8 @@ const CardProject = ({project}: Props) => {
     let web_link = checkExists(project.website);
     let internal_link = checkExists(project.internal_site);
     let icon_exist = checkExists(project.icon);
+    let tools_exist = checkExists(project.tools);
+    let text_exist = checkExists(project.text);
     let icon_project = project.icon === 'github' ? <FaGithub /> : project.icon === 'figma' ? <FaFigma /> : null ;
 
   return (
@@ -30,7 +32,12 @@ const CardProject = ({project}: Props) => {
             <CardBody fontFamily="Lora">
                 <Card.Title color="#151515">{project.title}</Card.Title>
                 <List.Root>
-                    <List.Item color="#151515">{project.tools}</List.Item>
+                    <Show when={tools_exist === 'exists'}>
+                        <List.Item color="#151515">{project.tools}</List.Item>
+                    </Show>
+                    <Show when={text_exist === "exists"}>
+                        <Text color="#151515">{project.text}</Text>
+                    </Show>
                 </List.Root>
             </CardBody>
         </Card.Body>
