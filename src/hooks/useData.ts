@@ -3,7 +3,6 @@
 import projects from "../data/projects"
 
 export interface Projects {
-    text_description: string;
     color: string,
     image: string,
     title: string,
